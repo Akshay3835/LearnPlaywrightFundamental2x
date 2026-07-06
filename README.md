@@ -64,7 +64,8 @@ npx playwright show-report
 │   │   ├── 220_BCP_MultiPages.spec.ts
 │   │   ├── 221_Test1.spec.ts
 │   │   ├── 222_Test2.spec.ts
-│   │   └── 223_BCP_Test_Options.spec.ts
+│   │   ├── 223_BCP_Test_Options.spec.ts
+│   │   └── 224_Task_06.spec.ts
 │   ├── 03_Locators_Commands/
 │   ├── ...
 │   ├── 23_Advance_Framework/
@@ -88,6 +89,7 @@ npx playwright show-report
 - **Multi-Page** (`220_BCP_MultiPages.spec.ts`) — open multiple tabs within the same context (shared cookies/session).
 - **Test Isolation** (`221_Test1.spec.ts`, `222_Test2.spec.ts`) — Playwright's automatic `page` fixture isolation; multi-user scenarios using `browser` fixture.
 - **Context Options** (`223_BCP_Test_Options.spec.ts`) — custom viewport, locale, timezone, geolocation permissions, and mobile emulation.
+- **Task 06 — Multi-Context Apps** (`224_Task_06.spec.ts`) — launches two isolated browser contexts, navigates to different applications (TTACart and TTA Bank), then cleans up.
 
 ### Projects (`tests/Projects/`)
 - **Template** (`template.spec.ts`) — a blank spec file for starting new test projects.
