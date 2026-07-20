@@ -77,6 +77,7 @@ npx playwright show-report
 │   │   ├── 232__PressSeq.spec.ts
 │   │   └── Xpath_TTA.pdf
 │   ├── 04_Session_Storage/             # Session storage and cookie management
+│   │   └── 233_SessionStorage.spec.ts
 │   ├── 05_Allure_Reporting/            # Allure reporting integration
 │   ├── 06_Multiple_Element_/           # Handling multiple elements and element lists
 │   ├── 07_WebTables/                   # Web table interaction (read, filter, sort)
@@ -129,13 +130,15 @@ npx playwright show-report
 - **pressSequentially** (`232__PressSeq.spec.ts`) — typing with `pressSequentially` and delay, plus `goBack` navigation.
 - **XPath Reference** (`Xpath_TTA.pdf`) — XPath cheat sheet PDF resource.
 
-### Modules 4–23 (Scaffolded — Coming Soon)
+### Module 4 — Session Storage (`tests/04_Session_Storage/`)
+- **Session Save & Reuse** (`233_SessionStorage.spec.ts`) — logs into VWO via Wingify, saves authentication state as `storageState` JSON for reuse in test suites.
 
-All modules 04–23 are scaffolded and ready for exercises as you progress through the course:
+### Modules 5–23 (Scaffolded — Coming Soon)
+
+All modules 05–23 are scaffolded and ready for exercises as you progress through the course:
 
 | Module | Topic |
 |---|---|
-| **04_Session_Storage** | Browser session storage and cookie management |
 | **05_Allure_Reporting** | Allure reporting integration for rich test reports |
 | **06_Multiple_Element_** | Handling multiple elements (`locator.all()`, loops) |
 | **07_WebTables** | HTML web table interaction (read, filter, sort) |
