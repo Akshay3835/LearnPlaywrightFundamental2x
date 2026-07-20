@@ -67,6 +67,8 @@ npx playwright show-report
 │   │   ├── 223_BCP_Test_Options.spec.ts
 │   │   └── 224_Task_06.spec.ts
 │   ├── 03_Locators_Commands/           # Locator strategies and Playwright commands
+│   │   ├── 225_LS.spec.ts
+│   │   └── 226_Project_VWO_Login.spec.ts
 │   ├── 04_Session_Storage/             # Session storage and cookie management
 │   ├── 05_Allure_Reporting/            # Allure reporting integration
 │   ├── 06_Multiple_Element_/           # Handling multiple elements and element lists
@@ -109,13 +111,16 @@ npx playwright show-report
 - **Context Options** (`223_BCP_Test_Options.spec.ts`) — custom viewport, locale, timezone, geolocation permissions, and mobile emulation.
 - **Task 06 — Multi-Context Apps** (`224_Task_06.spec.ts`) — launches two isolated browser contexts, navigates to different applications (TTACart and TTA Bank), then cleans up.
 
-### Modules 3–23 (Scaffolded — Coming Soon)
+### Module 3 — Locators & Commands (`tests/03_Locators_Commands/`)
+- **Launch Site** (`225_LS.spec.ts`) — navigates to the TTACart app and verifies the page loads.
+- **VWO Login with CSS Locators** (`226_Project_VWO_Login.spec.ts`) — demonstrates CSS selector strategies (`#id`, `[name=""]`), auto-waiting, and login error validation with `toContainText`.
 
-All modules 03–23 are scaffolded and ready for exercises as you progress through the course:
+### Modules 4–23 (Scaffolded — Coming Soon)
+
+All modules 04–23 are scaffolded and ready for exercises as you progress through the course:
 
 | Module | Topic |
 |---|---|
-| **03_Locators_Commands** | Locator strategies (CSS, XPath, text) and Playwright commands |
 | **04_Session_Storage** | Browser session storage and cookie management |
 | **05_Allure_Reporting** | Allure reporting integration for rich test reports |
 | **06_Multiple_Element_** | Handling multiple elements (`locator.all()`, loops) |
