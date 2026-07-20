@@ -68,7 +68,14 @@ npx playwright show-report
 │   │   └── 224_Task_06.spec.ts
 │   ├── 03_Locators_Commands/           # Locator strategies and Playwright commands
 │   │   ├── 225_LS.spec.ts
-│   │   └── 226_Project_VWO_Login.spec.ts
+│   │   ├── 226_Project_VWO_Login.spec.ts
+│   │   ├── 227_Project_3_Singup_VWO.spec.ts
+│   │   ├── 228_Project_3_Singup_VWO_PW_Locator.spec.ts
+│   │   ├── 229_PW_Command.spec.ts
+│   │   ├── 230__Refere_PW.spec.ts
+│   │   ├── 231__GetByRole_PW.spec.ts
+│   │   ├── 232__PressSeq.spec.ts
+│   │   └── Xpath_TTA.pdf
 │   ├── 04_Session_Storage/             # Session storage and cookie management
 │   ├── 05_Allure_Reporting/            # Allure reporting integration
 │   ├── 06_Multiple_Element_/           # Handling multiple elements and element lists
@@ -113,7 +120,14 @@ npx playwright show-report
 
 ### Module 3 — Locators & Commands (`tests/03_Locators_Commands/`)
 - **Launch Site** (`225_LS.spec.ts`) — navigates to the TTACart app and verifies the page loads.
-- **VWO Login with CSS Locators** (`226_Project_VWO_Login.spec.ts`) — demonstrates CSS selector strategies (`#id`, `[name=""]`), auto-waiting, and login error validation with `toContainText`.
+- **VWO Login with CSS Locators** (`226_Project_VWO_Login.spec.ts`) — CSS selector strategies (`#id`, `[name=""]`), auto-waiting, and login error validation.
+- **VWO Signup with XPath** (`227_Project_3_Singup_VWO.spec.ts`) — VWO free-trial signup using XPath locators with email validation error check.
+- **VWO Signup with Playwright Locators** (`228_Project_3_Singup_VWO_PW_Locator.spec.ts`) — same signup flow using `getByRole` and `getByText` Playwright built-in locators.
+- **WaitUntil Options** (`229_PW_Command.spec.ts`) — `commit`, `domcontentloaded`, `load`, `networkidle` wait strategies for `page.goto`.
+- **Referer Navigation** (`230__Refere_PW.spec.ts`) — default `load` navigation and custom referer header usage.
+- **getByRole Locator** (`231__GetByRole_PW.spec.ts`) — CURA Healthcare login using `getByRole` with name and disabled-state filtering.
+- **pressSequentially** (`232__PressSeq.spec.ts`) — typing with `pressSequentially` and delay, plus `goBack` navigation.
+- **XPath Reference** (`Xpath_TTA.pdf`) — XPath cheat sheet PDF resource.
 
 ### Modules 4–23 (Scaffolded — Coming Soon)
 
