@@ -77,7 +77,8 @@ npx playwright show-report
 │   │   ├── 232__PressSeq.spec.ts
 │   │   └── Xpath_TTA.pdf
 │   ├── 04_Session_Storage/             # Session storage and cookie management
-│   │   └── 233_SessionStorage.spec.ts
+│   │   ├── 233_SessionStorage.spec.ts
+│   │   └── 234_TestVWODashboard_NoCustomReport.spec.ts
 │   ├── 05_Allure_Reporting/            # Allure reporting integration
 │   ├── 06_Multiple_Element_/           # Handling multiple elements and element lists
 │   ├── 07_WebTables/                   # Web table interaction (read, filter, sort)
@@ -97,6 +98,9 @@ npx playwright show-report
 │   ├── 21_Fixture/                     # Custom Playwright fixtures
 │   ├── 22_Misc_Concepts/               # Miscellaneous advanced concepts
 │   ├── 23_Advance_Framework/           # Advanced test framework structure
+│   ├── 24_Task/                        # Task exercises
+│   │   ├── 235_Orange_Login.spec.ts
+│   │   └── 236_Task1_verify_url.spec.ts
 │   ├── Projects/
 │   │   └── template.spec.ts            # Blank project template
 │   └── example.spec.ts                 # Sample: title check + "Get started" link
@@ -132,10 +136,15 @@ npx playwright show-report
 
 ### Module 4 — Session Storage (`tests/04_Session_Storage/`)
 - **Session Save & Reuse** (`233_SessionStorage.spec.ts`) — logs into VWO via Wingify, saves authentication state as `storageState` JSON for reuse in test suites.
+- **Dashboard via Saved Session** (`234_TestVWODashboard_NoCustomReport.spec.ts`) — loads a previously saved `storageState` to access VWO dashboard/settings pages without re-entering credentials.
 
-### Modules 5–23 (Scaffolded — Coming Soon)
+### Module 24 — Task (`tests/24_Task/`)
+- **OrangeHRM Login** (`235_Orange_Login.spec.ts`) — logs into OrangeHRM demo site with role-based locators and validates terminated employee details.
+- **Verify Login URL** (`236_Task1_verify_url.spec.ts`) — logs into the TTA multiple-element practice app, fills credentials, checks the "remember me" box, and asserts the resulting URL contains the encoded form data and `#login-success` hash.
 
-All modules 05–23 are scaffolded and ready for exercises as you progress through the course:
+### Modules 5–24 (Scaffolded — Coming Soon)
+
+All modules 05–24 are scaffolded and ready for exercises as you progress through the course:
 
 | Module | Topic |
 |---|---|
@@ -158,6 +167,7 @@ All modules 05–23 are scaffolded and ready for exercises as you progress throu
 | **21_Fixture** | Custom Playwright fixtures for shared test state |
 | **22_Misc_Concepts** | Miscellaneous advanced Playwright concepts |
 | **23_Advance_Framework** | Building an advanced test framework structure |
+| **24_Task** | Task exercises (OrangeHRM login, URL verification on the TTA app) |
 
 ### Projects (`tests/Projects/`)
 - **Template** (`template.spec.ts`) — a blank spec file for starting new test projects.
